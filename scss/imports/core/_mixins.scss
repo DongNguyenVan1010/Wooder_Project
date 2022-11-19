@@ -1,0 +1,39 @@
+@mixin midflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin midabs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+@mixin midcenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    @include transform(1);
+}
+
+@mixin transform($s) {
+    transform: translate((-50%, -50%)) scale($s);
+    -webkit-transform: translate((-50%, -50%)) scale($s);
+    -o-transform: translate((-50%, -50%)) scale($s);
+}
+
+@mixin transition($ts) {
+    -webkit-transition: $ts;
+    -o-transition: $ts;
+    transition: $ts;
+}
+
+@mixin filter($gs, $br) {
+    filter: grayscale($gs) brightness($br);
+    -webkit-filter: grayscale($gs) brightness($br);
+    -o-filter: grayscale($gs) brightness($br);
+}

@@ -1,0 +1,42 @@
+$width-container: 975px;
+$width-container-fluid: 1540px;
+$height-header: 80px;
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-family: pr;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: $width-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (max-width: $sm-max) {
+        max-width: 790px;
+    }
+
+    @media screen and (max-width: $xs-max) {
+        max-width: 380px;
+    }
+}
+
+.container-fluid {
+    max-width: $width-container-fluid;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}

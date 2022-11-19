@@ -1,0 +1,31 @@
+// COLOR
+
+$white-cl: #ffffff;
+$brown: #bea67c;
+
+$black: #010101;
+$black-gallery: #0e0e0e;
+$black-header: #131316;
+
+$grey-wooder: #636262;
+$grey-desc: #464646;
+$grey-heading: #555555;
+$grey-footer: #b0b0b0;
+
+// RESPONSIVE
+
+$xxs-min: 576px; //co the thay doi
+$xs-min: 768px; //KHONG the thay doi
+$sm-min: 992px; //KHONG the thay doi
+$md-min: 1200px; //KHONG the thay doi
+$lg-min: 1600px; //co the thay doi
+
+$xxs-max: $xxs-min - 1; // SMALL MOBILE
+$xs-max: $xs-min - 1; // MOBILE
+$sm-max: $sm-min - 1; // TABLET
+$md-max: $md-min - 1; // DESKTOP
+$lg-max: $lg-min - 1; // LARGE DESKTOP
+
+// TRANSITION
+
+$ts: 0.4s;

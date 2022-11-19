@@ -1,0 +1,64 @@
+.textbox {
+    .heading {
+        font-size: 40px;
+        font-family: pb;
+        line-height: 83px;
+        letter-spacing: 1.2px;
+        color: $black;
+    }
+
+    .desc {
+        font-size: 16px;
+        font-family: pr;
+        line-height: 22px;
+        color: $grey-desc;
+    }
+
+    .learn {
+        text-decoration: none;
+        color: $black;
+        font-size: 14px;
+        font-family: pb;
+        line-height: 58px;
+        letter-spacing: 3.2px;
+        position: relative;
+        padding: 5px 0;
+
+        &::before {
+            content: ' ';
+            width: 40px;
+            height: 2px;
+            background: $brown;
+            position: absolute;
+            top: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm-max) {
+    .textbox {
+        .learn {
+            letter-spacing: 0;
+        }
+    }
+}
+
+.news {
+    &__list-items {
+        .itcaption {
+            .title {
+                font-size: 18px;
+                font-family: pb;
+                line-height: 24px;
+                margin-bottom: 24px;
+                margin-top: 48px;
+            }
+
+            .content {
+                font-size: 15px;
+                font-family: pr;
+                line-height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.footer {
+    background: $black;
+    padding: 24px 0;
+    position: relative;
+
+    .container {
+        @include midflex;
+    }
+
+    &__logo {
+        @include midcenter;
+
+        img {
+            width: 145px;
+        }
+    }
+
+    &__copyright {
+        color: $grey-footer;
+        font-size: 12px;
+        letter-spacing: 0.8px;
+    }
+
+    &__back {
+        color: $grey-footer;
+        font-size: 12px;
+        text-decoration: none;
+        letter-spacing: 0.8px;
+
+        &:hover {
+            color: $brown;
+
+            @include transition($ts);
+        }
+    }
+}
+
+@media screen and (max-width: $sm-max) {
+    .footer {
+        height: 115px;
+
+        .container {
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,164 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+
+    /* size */
+    --width-container: 975px;
+    --width-container-fluid: 1540px;
+    --height-header: 80px;
+
+
+    /* color */
+    --white-cl: #ffffff;
+    --brown: #bea67c;
+    --black: #010101;
+    --black-header: #131316;
+
+
+}
+
+.container-fluid {
+    max-width: var(--width-container-fluid);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container {
+    max-width: var(--width-container);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header {
+    height: var(--height-header);
+    background-color: var(--black-header);
+}
+
+header .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+header .header__menu {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .header__menu li a {
+    color: var(--white-cl);
+    text-decoration: none;
+    font-size: 15px;
+    font-family: pb;
+
+    padding: 30px 35px;
+}
+
+header .header__lang span {
+    color: var(--white-cl);
+    font-size: 16px;
+    font-family: pb;
+    text-decoration: none;
+}
+
+header .header__lang .header__lang-select {
+    display: none;
+
+}
+
+
+
+/* PRODUCTS */
+.products {
+    padding-top: 92px;
+}
+
+.products .products__row .products__row-text {
+    padding-left: 96px;
+    padding-right: 76px;
+}
+
+.textbox .heading {
+    font-size: 40px;
+    font-family: pb;
+    line-height: 83px;
+    letter-spacing: 1.2px;
+    color: var(--black);
+}
+
+.textbox .desc {
+    font-size: 16px;
+    font-family: pr;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.learn {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    font-family: pb;
+    line-height: 58px;
+    letter-spacing: 3.2px;
+
+}
+
+.products .products__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 105px;
+}
+
+.products .products__row:last-child {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    margin-bottom: 95px;
+}
+
+.products .products__row:last-child .textbox {
+    padding-right: 96px;
+    padding-left: 76px;
+}
+
+
+
+/* VIDEO */
+.textbox.--center {
+    text-align: center;
+    padding: 0 248px;
+}
+
+.textbox.--center .desc {
+    margin: 0 6px;
+}
+
+
+
+/* DESIGN */
+
+
+
+
+/* ABOUT */
+.about .about__flex {
+    display: flex;
+    align-items: center;
+}
+
+.about .about__flex .about__text {
+    margin-left: 72px;
+}
